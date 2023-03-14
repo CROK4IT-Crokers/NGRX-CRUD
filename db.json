@@ -1,0 +1,27 @@
+{
+  "customers": [
+    {
+      "name": "John Doee",
+      "phone": "910928392098",
+      "address": "123 Sun Street",
+      "memberShip": "Platinium",
+      "id": 1,
+      "membership": "Platinum"
+    },
+    {
+      "name": "Mary Johnson",
+      "phone": "910928392099",
+      "address": "123 Sun Boulevard",
+      "memberShip": "Pro",
+      "id": 2,
+      "membership": "Pro"
+    },
+    {
+      "name": "Gnichi Mohamed",
+      "phone": "+352691724845",
+      "address": "Jilma Nord",
+      "membership": "Pro",
+      "id": 3
+    }
+  ]
+}
