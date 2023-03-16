@@ -4,13 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import {
-  StoreRouterConnectingModule,
-  routerReducer,
-  RouterStateSerializer,
-} from '@ngrx/router-store';
-
-import { CustomSerializer } from './shared/utils';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,15 +15,12 @@ import { NavbarComponent } from './navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({
-      router: routerReducer,
-    }),
-    StoreRouterConnectingModule.forRoot({ stateKey: 'router' }),
+    StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     HttpClientModule,
     StoreDevtoolsModule.instrument(),
   ],
-  providers: [{ provide: RouterStateSerializer, useClass: CustomSerializer }],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
